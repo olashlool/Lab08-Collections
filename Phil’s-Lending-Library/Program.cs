@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Phil_s_Lending_Library
 {
-    class Program
+     public class Program
     {
         private static readonly Library library = new Library();
         private static readonly Backpack<Book> TheBackpack = new();
