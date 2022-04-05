@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {}
+    "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {
+    "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj",
+        "projectUniqueName": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj",
         "projectName": "Phil’s-Lending-Library",
-        "projectPath": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj",
-        "packagesPath": "C:\\Users\\JCC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\obj\\",
+        "projectPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj",
+        "packagesPath": "C:\\Users\\Ola M AL-Shlool\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ola M AL-Shlool\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

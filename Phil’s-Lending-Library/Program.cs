@@ -129,6 +129,11 @@ namespace Phil_s_Lending_Library
         }
         static void ReturnBook()
         {
+            Console.WriteLine("    =================================");
+            Console.WriteLine("    =========== Return Book =========");
+            Console.WriteLine("    =================================");
+            Console.WriteLine();
+            ViewBookBag();
             Dictionary<int, Book> books = new Dictionary<int, Book>();
             int counter = 1;
             foreach (Book book in TheBackpack)
@@ -140,7 +145,6 @@ namespace Phil_s_Lending_Library
             Console.Write("Choose a book to return to the library: ");
             string response = Console.ReadLine();
             int.TryParse(response, out int selection);
-            Console.WriteLine(selection);
             Book bookToReturn = TheBackpack.Unpack(selection);
 
             library.Return(bookToReturn);

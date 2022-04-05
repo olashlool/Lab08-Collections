@@ -5933,19 +5933,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JCC\\.nuget\\packages\\": {}
+    "C:\\Users\\Ola M AL-Shlool\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\LibraryTest\\LibraryTest.csproj",
+      "projectUniqueName": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\LibraryTest\\LibraryTest.csproj",
       "projectName": "LibraryTest",
-      "projectPath": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\LibraryTest\\LibraryTest.csproj",
-      "packagesPath": "C:\\Users\\JCC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\LibraryTest\\obj\\",
+      "projectPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\LibraryTest\\LibraryTest.csproj",
+      "packagesPath": "C:\\Users\\Ola M AL-Shlool\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\LibraryTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ola M AL-Shlool\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5959,8 +5959,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {
-              "projectPath": "C:\\Users\\JCC\\source\\repos\\Hanan-Nathem-Saadeh\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj"
+            "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj": {
+              "projectPath": "C:\\Users\\Ola M AL-Shlool\\Desktop\\LTUC\\Lab08-Collections\\Phil’s-Lending-Library\\Phil’s-Lending-Library.csproj"
             }
           }
         }
