@@ -6,7 +6,7 @@ Users are also able to create new books, and view all the books within the libra
 
 ### How do you run the program?
 1. Clone repo to your device.
-2. Open the solution file Phil’s-Lending-Library.sln in Visual Studio.
+2. Open the solution file Philâ€™s-Lending-Library.sln in Visual Studio.
 3. To run the app, go to Debug > Start Without Debugging (or press ctrl+F5).
 
 #### Visuals:
@@ -21,10 +21,10 @@ Users are also able to create new books, and view all the books within the libra
 ![Add a Book](Assest/AddBooks.png)
 
 4. #### Borrow a book
-![Borrow a book](Assest/Borrowbook.png)
+![Borrow a book](Assest/BorrowBook.png)
 
 5. #### Return a book
-![Return a book](Assest/Returnbook.png)
+![Return a book](Assest/ReturnBook.png)
 
 6. #### View Book Bag
 ![View Book Bag](Assest/ViewBookBag.png)
