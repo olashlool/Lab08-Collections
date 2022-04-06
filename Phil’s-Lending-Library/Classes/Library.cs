@@ -15,7 +15,7 @@ namespace Phil_s_Lending_Library
         public void Add(string title, string firstName, string lastName, int numberOfPages)
         {
             Book NewBook = new Book(title, firstName, lastName, numberOfPages);
-            MyDictionary.Add(title, NewBook);
+            MyDictionary.TryAdd(title, NewBook);
         }
 
          public Book Borrow(string title)
@@ -43,7 +43,7 @@ namespace Phil_s_Lending_Library
 
         public void Return(Book book)
         {
-            MyDictionary.Add(book.Title, book);
+            MyDictionary.TryAdd(book.Title, book);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
