@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Phil_s_Lending_Library
 {
-    class Backpack<T> : IBag<T>
+    public class Backpack<T> : IBag<T>
     {
         private List<T> bookList = new List<T>();
 

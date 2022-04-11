@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Phil_s_Lending_Library
 {
-    class Program
+     public class Program
     {
         private static readonly Library library = new Library();
         private static readonly Backpack<Book> TheBackpack = new();
@@ -38,9 +38,16 @@ namespace Phil_s_Lending_Library
                 switch (choose)
                 {
                     case 1:
+                        Console.WriteLine();
+                        Console.WriteLine();
                         ShowLibrary();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
                         break;
                     case 2:
+                        Console.WriteLine();
+                        Console.WriteLine();
                         AddABook();
                         Console.Write("Do you ADD other Book ? (Y/N) ");
                         string ans = Console.ReadLine();
@@ -51,8 +58,13 @@ namespace Phil_s_Lending_Library
                             ans = Console.ReadLine();
                         }
                         ShowLibrary();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
                         break;
                     case 3:
+                        Console.WriteLine();
+                        Console.WriteLine();
                         BorrowBook();
                         Console.Write("Do you Borrow other Book ? (Y/N) ");
                         ans = Console.ReadLine();
@@ -62,12 +74,25 @@ namespace Phil_s_Lending_Library
                             Console.Write("Do you Borrow other Book ? (Y/N) ");
                             ans = Console.ReadLine();
                         }
+                        Console.WriteLine();
+                        Console.WriteLine();
+
                         break;
                     case 4:
+                        Console.WriteLine();
+                        Console.WriteLine();
                         ReturnBook();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
                         break;
                     case 5:
+                        Console.WriteLine();
+                        Console.WriteLine();
                         ViewBookBag();
+                        Console.WriteLine();
+                        Console.WriteLine();
+
                         break;
                     case 6:
                         continues = false;
@@ -125,25 +150,44 @@ namespace Phil_s_Lending_Library
 
             Book borrowed = library.Borrow(selection.ToUpper());
             TheBackpack.Pack(borrowed);
-
         }
         static void ReturnBook()
         {
-            Dictionary<int, Book> books = new Dictionary<int, Book>();
-            int counter = 1;
-            foreach (Book book in TheBackpack)
+            try
             {
-                books.Add(counter, book);
-                Console.WriteLine($"{counter++}. {book.Title} - {book.FirstName} {book.LastName}");
-
+                Console.WriteLine("    =================================");
+                Console.WriteLine("    =========== Return Book =========");
+                Console.WriteLine("    =================================");
+                Console.WriteLine();
+                //ViewBookBag();
+                Dictionary<int, Book> books = new Dictionary<int, Book>();
+                int counter = 0;
+                Console.WriteLine( "List of Book Bag ..... ");
+                foreach (Book book in TheBackpack)
+                {
+                    books.Add(counter, book);
+                    Console.WriteLine($"{counter + 1}. {book.Title} - {book.FirstName} {book.LastName}");
+                    counter++;
+                }
+                Console.WriteLine();
+                Console.Write("Which of your books would you like to return: ");
+                string response = Console.ReadLine();
+                int.TryParse(response, out int selection);
+                if (selection > counter) throw new Exception();
+                Book bookToReturn = TheBackpack.Unpack(selection - 1);
+                library.Return(bookToReturn);
             }
-            Console.Write("Choose a book to return to the library: ");
-            string response = Console.ReadLine();
-            int.TryParse(response, out int selection);
-            Console.WriteLine(selection);
-            Book bookToReturn = TheBackpack.Unpack(selection);
-
-            library.Return(bookToReturn);
+            catch (Exception)
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine("Out Of Range...");
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.WriteLine();
+                ReturnBook();
+            }
         }
         static void ViewBookBag()
         {

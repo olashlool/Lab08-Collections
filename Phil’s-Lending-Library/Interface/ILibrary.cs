@@ -8,6 +8,7 @@ namespace Phil_s_Lending_Library
 {
     public interface ILibrary : IReadOnlyCollection<Book>
     {
+
         /// <summary>
         /// Add a Book to the library.
         /// </summary>

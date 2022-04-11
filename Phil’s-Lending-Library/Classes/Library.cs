@@ -10,12 +10,12 @@ namespace Phil_s_Lending_Library
     public class Library : ILibrary
     {
         private Dictionary<string, Book> MyDictionary = new Dictionary<string, Book>();
-        public int Count => throw new NotImplementedException();
+        public int Count => MyDictionary.Count;
 
         public void Add(string title, string firstName, string lastName, int numberOfPages)
         {
             Book NewBook = new Book(title, firstName, lastName, numberOfPages);
-            MyDictionary.Add(title, NewBook);
+            MyDictionary.TryAdd(title, NewBook);
         }
 
          public Book Borrow(string title)
@@ -26,6 +26,7 @@ namespace Phil_s_Lending_Library
                 Book book = MyDictionary[title];
                 //remove book from library
                 MyDictionary.Remove(title);
+                
                 //return book
                 return book;
              }
@@ -42,7 +43,7 @@ namespace Phil_s_Lending_Library
 
         public void Return(Book book)
         {
-            MyDictionary.Add(book.Title, book);
+            MyDictionary.TryAdd(book.Title, book);
         }
 
         IEnumerator IEnumerable.GetEnumerator()
