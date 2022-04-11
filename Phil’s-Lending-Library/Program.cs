@@ -150,7 +150,6 @@ namespace Phil_s_Lending_Library
 
             Book borrowed = library.Borrow(selection.ToUpper());
             TheBackpack.Pack(borrowed);
-
         }
         static void ReturnBook()
         {
@@ -178,7 +177,7 @@ namespace Phil_s_Lending_Library
                 Book bookToReturn = TheBackpack.Unpack(selection - 1);
                 library.Return(bookToReturn);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 Console.WriteLine();
                 Console.WriteLine();
@@ -189,7 +188,6 @@ namespace Phil_s_Lending_Library
                 Console.WriteLine();
                 ReturnBook();
             }
-            
         }
         static void ViewBookBag()
         {
